@@ -19,6 +19,14 @@ void setup() {
   currentMillis = millis(); // initialize currentMillis
   pinMode(myLED, OUTPUT);
   digitalWrite(myLED, LOW);
+
+  // Flash the LED to notify the user that the cycle is starting
+  for (int i = 0; i < 5; i++){
+    digitalWrite(myLED, HIGH);
+    delay(20);
+    digitalWrite(myLED, LOW);
+    delay(100);
+  }
   } 
 void loop() {
   while (millis() < runTimeMillis){
