@@ -1,7 +1,7 @@
 /* TeensyMouseJiggler
  *  Luke Miller 2019
  *  
- *  Code implemented on a Teensy 3.0 to "jiggle" the mouse cursor
+ *  Code implemented on a Teensy 3.0/3.1 to "jiggle" the mouse cursor
  *  every once in a while (moveInterval) for a set amount of hours (runTimeMillis)
  *  Once the designated number of hours have elapsed, you will need to manually
  *  hit the reset button on the Teensy to restart the timer. 
@@ -9,7 +9,7 @@
  *  the button will reset the timer, so that the program will now run
  *  for the number of elapsed hours stored in runTimeMillis from when you hit
  *  the button.
- *  
+ *  When programming the Teensy, set the Tools>USB type option to "Keyboard + Mouse + Joystick"
  *  
  */
 
